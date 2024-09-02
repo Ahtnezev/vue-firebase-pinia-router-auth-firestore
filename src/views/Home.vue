@@ -25,7 +25,7 @@ const handleSubmit = async () => {
 <template>
   <div class="row">
     <div class="col-12 col-lg-10 mx-auto">
-      <h1>Home</h1>
+      <h1>Home `changes`</h1>
       <p>{{ userSt.userData?.email }}</p>
 
       <form class="d-flex align-items-center" @submit.prevent="handleSubmit">

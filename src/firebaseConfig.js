@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
 	apiKey: "AIzaSyC6YSZK01fCw_XTwz1cYuUW6TFo8MnZcKY",
@@ -12,6 +13,7 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 const auth = getAuth();
+const db = getFirestore();
 
 //~ Firebase docs: https://firebase.google.com/docs/auth/web/password-auth
-export  { auth }
+export  { auth, db }
